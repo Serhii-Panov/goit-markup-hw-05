@@ -147,7 +147,7 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/hero-background.jpg);
+    url(../images/hero-background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -450,6 +450,10 @@ address {
   margin-bottom: 16px;
 }
 
+.footer-socials-box {
+  margin-right: 80px;
+}
+
 .footer-socials-box-text {
   font-weight: 500;
   font-size: 16px;
@@ -489,4 +493,124 @@ address {
   border-radius: 50%;
 }
 
+.bottom-subscribe {
+  display: flex;
+  gap: 24px;
+}
+.bottom-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bottom-subscribe-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.bottom-subscribe-form-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.bottom-subscribe-form-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  color: #fff;
+  align-self: flex-end;
+  border: 0;
+}
+.submit-btn-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 20px;
+}
+
 /* =====================Footer section end=====================*/
+
+/* =====================Modal section start=====================*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 408px;
+  height: 584px;
+  background-color: #fff;
+}
+.modal-form-close-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.modal-form-close-btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.modal-form {
+}
+.modal-form-name {
+}
+.modal-form-input-name {
+}
+.modal-form-name-icon {
+}
+.modal-form-phone {
+}
+.modal-form-input-phone {
+}
+.modal-form-phone-icon {
+}
+.modal-form-email {
+}
+.modal-form-input-email {
+}
+.modal-form-email-icon {
+}
+.modal-form-comment {
+}
+.modal-form-textarea {
+}
+.modal-form-submit-btn {
+}
+/* =====================Modal section start=====================*/

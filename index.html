@@ -32,7 +32,7 @@
               <a class="main-menu-item current" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="main-menu-item" href="">Portfolio</a>
+              <a class="main-menu-item" href="#portfolio">Portfolio</a>
             </li>
             <li>
               <a class="main-menu-item" href="">Contacts</a>
@@ -364,7 +364,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="section-header">Our Portfolio</h2>
           <ul class="portfolio-items">
@@ -554,7 +554,113 @@
             </li>
           </ul>
         </div>
+        <div class="bottom-subscribe">
+          <form class="bottom-subscribe-form">
+            <label for="user-email" class="bottom-subscribe-label"
+              >Subscribe
+            </label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+              class="bottom-subscribe-form-input"
+            />
+          </form>
+          <button type="submit" class="subscribe-btn">
+            Subscribe
+            <svg
+              width="24"
+              height="20"
+              viewBox="0 0 24 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 0L0 11.25L7.66994 13.6172L19.5 4.375L10.5017 14.4913L10.509 14.4936L10.5 14.4913V20L14.8013 15.8183L20.2501 17.5L24 0Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="modal-form-close-btn"></button>
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="modal-form-close-btn-icon"
+        >
+          <g clip-path="url(#clip0_914793_440)">
+            <path
+              d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+              fill="#2E2F42"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_914793_440">
+              <rect width="8" height="8" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <form class="modal-form">
+          <p>Leave your contacts and we will call you back</p>
+          <label class="modal-form-name"
+            >Name
+            <input type="text" name="user-name" class="modal-form-input-name" />
+            <svg width="12" height="12" class="modal-form-name-icon">
+              <use href="./images/icons.svg#icon-person.svg"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-phone"
+            >Phone
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-form-input-phone"
+            />
+            <svg width="12" height="12" class="modal-form-phone-icon">
+              <use href="./images/icons.svg#icon-phone.svg"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-email"
+            >Email
+            <input
+              type="email"
+              name="user-email"
+              class="modal-form-input-email"
+            />
+            <svg width="12" height="12" class="modal-form-email-icon">
+              <use href="./images/icons.svg#icon-mail.svg"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-comment">
+            Comment
+            <textarea
+              rows="8"
+              type="text"
+              name="comment"
+              placeholder="Text input"
+              class="modal-form-textarea"
+            >
+            </textarea>
+          </label>
+        </form>
+        <input type="checkbox" name="privacy" id="privacy" />
+        <label for="privacy"
+          >I accept the terms and conditions of the
+          <a href="#">Privacy Policy</a></label
+        >
+        <button type="submit" class="modal-form-submit-btn">Send</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -121,7 +121,7 @@ a {
 
 address {
   font-weight: 400;
-  font-size: 16;
+  font-size: 16px;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -499,24 +499,30 @@ address {
 }
 .bottom-subscribe-form {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  /* flex-direction: column; */
+  gap: 24px;
 }
-.bottom-subscribe-label {
+.bottom-subscribe-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .bottom-subscribe-form-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  background-color: #2e2f42;
+  color: #fff;
+  background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -529,6 +535,12 @@ address {
 }
 
 .subscribe-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,17 +548,17 @@ address {
   gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   color: #fff;
   align-self: flex-end;
-  border: 0;
+  border: none;
+  cursor: pointer;
 }
-.submit-btn-icon {
-  fill: currentColor;
-  width: 24px;
-  height: 20px;
+.subscribe-btn-icon {
+  margin-left: 16px;
+  fill: #fff;
 }
 
 /* =====================Footer section end=====================*/

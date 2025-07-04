@@ -60,7 +60,9 @@
       <section class="main-action">
         <div class="container">
           <h1 class="main-line">Effective Solutions for Your Business</h1>
-          <button class="main-action-btn" type="button">Order Service</button>
+          <button class="main-action-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -576,9 +578,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button type="button" class="modal-form-close-btn">
+        <button type="button" class="modal-form-close-btn" data-modal-close>
           <svg width="8" height="8" class="modal-close-btn-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -662,15 +664,14 @@
               ><span class="custom-checkbox"
                 ><svg width="10" height="8" class="custom-checkbox-icon">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
-              >I accept the terms and conditions of the<a
-                class="modal-privacy-link"
-                >Privacy Policy</a
-              ></label
+              >I accept the terms and conditions of the
+              <a class="modal-privacy-link"> Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="modal-form-submit-btn">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
